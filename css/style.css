@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.element-2{
+    color: red;
+}
+.con-number span i{
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    border-radius: 50%;
+    animation: drop 5s infinite;
+}
+@keyframes drop {
+    0%   {background-color:rgb(245, 241, 241); left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:rgb(69, 240, 69); left:0px; top:200px;}
+    100% {background-color:rgb(77, 26, 26); left:0px; top:0px;}
+  }
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+.main-header .container-fluid{
+    max-width: 1400px;
+}
+.btn.btn-primary {
+    padding: 10px 23px;
+    background: #e83b3e;
+    border: #e83b3e;
+    position: relative;
+    z-index: 1;
+}
+.btn.btn-primary::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #111;
+    border-color: #111;
+    z-index: -1;
+    transition: 0.3s;
+}
+.btn.btn-primary:hover::after{
+    width: 100%;
+    border-radius: 3px;
+}
+ul.my-menu li{
+    position: relative;
+}
+ul.my-menu li ul{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 125%;
+    background: rgb(219, 209, 209);
+    list-style: none;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition:all 0.4s ease;
+}
+ul.my-menu li:hover ul{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+ul.my-menu li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    font-weight: 500;
+}
+ul .my-menu li a:hover{}
+
+
+.header-info{}
+.header-search{
+    width: 60px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.header-call{
+    width: 200px;
+}
+.header-call-icon{
+    font-size: 20px;
+    color: rgb(245, 58, 58);
+}
+.header-call-info a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.main-header .container-fluid,
+.slider-section .container-fluid{
+    max-width: 1480px;
+}
+.slider-contant-wrap{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+.header-social{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-right: 1px solid red;
+    text-align: center;
+}
+.slider-section{
+    background: url(../image/main-banner2.jpg) no-repeat top center fixed;
+    background-size: cover;
+    
+     
+}
+.slider-contant h6{color: lightsalmon;}
+.slider-contant h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 70px;
+}
+.slider-contant p{}
+
+.header-social ul{
+    list-style: none;
+}
+.header-social ul li{}
+.header-social ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.client-logo ul{}
+.client-logo ul li{
+    list-style: none;
+    padding-left: 0;
+}
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+img{
+    max-width: 100%;
+}
+
+/* about section */
+.about-image{
+    position: relative;
+}
+.about-img-text{
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    background: url(../image/shape.png);
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-text-inner h2{
+    color: red;
+    font-size: 50px;
+    font-weight: 700;
+}
+.about-text-inner p{}
+.finix-text h6{
+    color: #e83b3e;
+}
+.finix-text h2{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.grybg{
+    background-color: #f9fafb;
+}
+ 
+.finix-text p{}
+.finix-text strong{}
+.finix-text ul{
+    list-style: none;
+     
+    margin-top: 20px;
+    display: flex;
+    
+}
+.finix-text ul li::before{
+    content: "\f00c";
+    font-family: "font-Awesome 5 free";
+    font-weight: 600;
+    color: #e83b3e;
+    display: inline-block;
+    padding: 10px;
+}
+.why-card{
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+     
+}
+.why-card:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.why-card:hover .why-icon i{
+    background: red;
+    transition: all 0.5s;
+    color: white;
+}
+.why-card::before{
+    content: "";
+    position: absolute;
+    top: -102px;
+    right: 0px;
+    left: 8px;
+    margin: auto;
+    width: 90%;
+    height: 70%;
+    background: rgb(238, 180, 170);
+    border-radius: 50%;
+    
+}
+.why-icon i{
+    background: white;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color:black;
+    line-height: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+.mtop4{
+    margin-bottom: 20px;
+}
+.finix-text{
+    position: relative;
+}
+.why-ply-btn{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background: white;
+    font-size: 58px;
+    text-align: center;
+    line-height: 82px;
+    color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 526px;
+    left: 305px;
+}
+.why-ply-btn::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: red;
+    font-size: 58px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: ply-btn 1s infinite;
+}
+.step-section{}
+.step-section ul{
+    list-style: none;
+    position: relative;
+    padding-left: 60px;
+}
+.step-section ul::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 100px);
+    width: 1px;
+    background: red;
+}
+.step-section ul li{
+    position: relative;
+    margin-bottom: 25px;
+}
+.step-section ul li::before{
+    content: attr(data-counter);
+    position: absolute;
+    top: -8px;
+    left: -80px;
+    height: 40px;
+    width: 40px;
+    background: white;
+    border: 1px solid red;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+.step-section strong{}
+.step-section p{}
+
+.calculate-fr{
+     padding: 50px;
+     background: lightblue;
+}
+.calculate-from .finix-text h6{
+     
+}
+.design{
+    background: red;
+    padding: 40px 70px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px;
+}
+.call-to h2{
+    color: white;
+    font-weight: normal;
+}
+.call-to span{
+    color: black;
+}
+.con-number h3{
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 40px;
+}
+.con-number a{
+    text-decoration: none;
+}
+.con-number span i{
+    color: #ff0000;
+    font-size: 40px;
+    background: white;
+    /* padding: 15px; */
+    border-radius: 50%;
+    display: block;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    line-height: 61px;
+}
+/*Company valo section-css*/
+ .com-perfrom-icon i{
+    font-size: 44px;
+    padding: 0px 23px;
+    color: red;
+}
+ .com-perfrom-text h3{}
+
+@keyframes ply-btn{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    10%{
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    50%{
+        transform: scale(1.4);
+        opacity: 0.5;
+    }
+    70%{
+        transform: scale(1.6);
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+/*services section css*/
+.servises-section{
+    background: #F9FAFB;
+}
+
+/*footer section css*/
+.footer-all{
+    background: black;
+}
+.footer-left-side-logo p{
+    color: white;
+    margin-top: 10px;
+}
+.footer-left-side-social i{
+    color: white;
+    font-size: 20px;
+}
+.footer-quicklink-side h3{
+    color: white;
+     
+    border-bottom: 1px solid #7a7777;
+    margin-bottom: 3px;
+}
+.footer-quicklink-side ul{list-style: none;}
+.footer-quicklink-side ul li{
+    
+}
+.footer-quicklink-side ul a{
+     
+    color: white;
+    
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.footer-quicklink-side ul a:hover{
+    color: red;
+    transform:translateX(40px);
+}
+.location i{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.location strong{
+    color: white;
+}
+ 
